@@ -24,9 +24,19 @@
     </div>
 
     <!-- メーカー名検索用の入力欄 -->
-    <div class="col-sm-12 col-md-3">
+    {{-- <div class="col-sm-12 col-md-3">
         <input type="text" name="search" class="form-control" placeholder="メーカー名" value="{{ request('search') }}">
+    </div> --}}
+
+    <div class="mb-3">
+        {{-- <label for="company_id" class="form-label">メーカー</label> --}}
+        <select class="form-select" id="company_id" name="company_id">
+            @foreach($companies as $company)
+                <option value="{{ $company->id }}" {{isset($company->id) ? 'selected' : '' }}>{{ $company->company_name }}</option>
+            @endforeach
+        </select>
     </div>
+
 
     <!-- 絞り込みボタン -->
     <div class="col-sm-12 col-md-1">
