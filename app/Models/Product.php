@@ -8,22 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    // articlesテーブルからデータを取得
-    // public function getList() {
-    //     $products = DB::table('products')->get();
-
-    //     return $products;
-    // }
-
-    // public function registProduct($data) {
-    //     // 登録処理
-    //     DB::table('products')->insert([
-    //         'title' => $data->title,
-    //         'url' => $data->url,
-    //         'comment' => $data->comment,
-    //     ]);
-    // }
-    
 // ステップ7内容
     // ダミーレコードを代入する機能を使うことを宣言しています。
     use HasFactory;

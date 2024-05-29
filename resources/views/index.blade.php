@@ -24,10 +24,6 @@
     </div>
 
     <!-- メーカー名検索用の入力欄 -->
-    {{-- <div class="col-sm-12 col-md-3">
-        <input type="text" name="search" class="form-control" placeholder="メーカー名" value="{{ request('search') }}">
-    </div> --}}
-
     <div class="mb-3">
         {{-- <label for="company_id" class="form-label">メーカー</label> --}}
         <select class="form-select" id="company_id" name="company_id">
@@ -82,11 +78,6 @@
                     <td>
                         <a href="{{ route('products.show', $product) }}" class="btn btn-info btn-sm mx-1">詳細表示</a>
                         <a href="{{ route('products.edit', $product) }}" class="btn btn-primary btn-sm mx-1">編集</a>
-                        {{-- <form method="POST" action="{{ route('products.destroy', $product) }}" class="d-inline">
-                            @csrf
-                            @method('DELETE')
-                            <button type="submit" class="btn btn-danger btn-sm mx-1">削除</button>
-                        </form> --}}
                     </td>
                     <td>
                     {{-- データを削除するボタンをフォームで作成 --}}

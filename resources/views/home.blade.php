@@ -22,11 +22,5 @@
 </div>
 <form method="POST" action="{{ route('products.store') }}" enctype="multipart/form-data">
 
-    @csrf
-
-{{-- <input id="product_name" type="text" name="product_name" class="form-control" required> --}}
-
-{{-- // 残りのコード --}}
-{{-- <input id="product_name" type="text" name="product_name" class="form-control" required> --}}
-
+@csrf
 @endsection
