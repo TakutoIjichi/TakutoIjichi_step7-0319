@@ -59,7 +59,8 @@ Auth::routes();
 
 // // Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/product', [ProductController::class, 'index'])->name('product');
 
 // テスト
 // 商品一覧表示
